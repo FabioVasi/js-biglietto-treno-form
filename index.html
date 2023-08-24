@@ -11,15 +11,6 @@
 </head>
 <body>
     
-    <input id="user" type="text">
-    <input id="distance" type="text">
-    <select id="age">
-        <option>Maggiorenne</option>
-        <option>Minorenne</option>
-        <option>Over 65</option>
-    </select>
-    <button id="generate">GENERA</button>
-    <!--
     <h1>
         CALCOLA IL PREZZO DEL TUO BIGLIETTO
     </h1>
@@ -28,19 +19,19 @@
             <div class="col-4">
                 <div class="card">
                     <h5>Nome e cognome</h5>
-                    <input class="info" type="text">
+                    <input class="info" id="user" type="text">
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
                     <h5>Km da percorrere</h5>
-                    <input class="info" type="text">
+                    <input class="info" id="distance" type="text">
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
                     <h5>Fascia d'età</h5>
-                    <select class="option">
+                    <select class="option" id="age">
                         <option>Maggiorenne</option>
                         <option>Minorenne</option>
                         <option>Over 65</option>
@@ -48,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <button>GENERA</button>
+        <button id="generate">GENERA</button>
         <button>ANNULLA</button>
     </div>
     <h2>
@@ -64,7 +55,7 @@
                     <h3>
                         NOME PASSEGGERO
                     </h3>
-                    <h4 id="greetings">
+                    <h4 id="passenger">
 
                     </h4>
                 </div>
