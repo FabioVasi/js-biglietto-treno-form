@@ -37,7 +37,9 @@ document.getElementById('generate').addEventListener("click", function() {
     console.log(userAge);
 });
 
-let ticketPrice = Km * 0.21;
+let price = 0.21;
+
+let ticketPrice = Km * price;
 
 if(userAge === 'Minorenne') {
     ticketPrice = ticketPrice - (ticketPrice * 0.2);
