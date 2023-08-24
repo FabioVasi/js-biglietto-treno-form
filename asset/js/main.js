@@ -46,5 +46,19 @@ document.getElementById('generate').addEventListener("click", function() {
     }
     console.log(ticketPrice.toFixed(2) + ' €');
 
+    const passengerElement = document.getElementById('passenger');
+    console.log(passengerElement);
+
+    passengerElement.innerHTML = userName;
+
+    const saleElement = document.getElementById('sale');
+    console.log(saleElement);
+
+    saleElement.innerHTML = 'Biglietto Standard';
+
+    const costsElement = document.getElementById('costs');
+    console.log(costsElement);
+
+    costsElement.innerHTML = ticketPrice.toFixed(2) + ' €';
 });
 
