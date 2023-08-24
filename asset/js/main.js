@@ -18,21 +18,31 @@ Strumenti.
 - const/let
 - if/else
 - .classList/.className
-
 */
-
 // chiedere numero di chilometri da percorrere
-const Km = document.querySelector()
 // chiedere Nome e Cognome dell'utente
-const userName = document.querySelector()
+
 // chiedere l'età del passeggero
-const userAge = document.querySelector()
 // prezzo del biglietto intero 0.21 € al km
-let ticketPrice = Km * 0.21;
+
 // applicare il 20% di sconto per i minorenni
 // applicare il 40% di sconto per gli over 65
-if(userAge < 18){
+
+document.getElementById('generate').addEventListener("click", function() {
+    const userName = document.getElementById('user').value;
+    console.log(userName);
+    const Km = document.getElementById('distance').value;
+    console.log(Km);
+    const userAge = document.getElementById('age').value;
+    console.log(userAge);
+});
+
+let ticketPrice = Km * 0.21;
+
+if(userAge === 'Minorenne') {
     ticketPrice = ticketPrice - (ticketPrice * 0.2);
-} else if(userAge > 65){
+} else if(userAge === 'Over 65'){
     ticketPrice = ticketPrice - (ticketPrice * 0.4);
 }
+
+console.log(ticketPrice);
