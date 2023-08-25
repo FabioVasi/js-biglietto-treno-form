@@ -56,6 +56,14 @@ document.getElementById('generate').addEventListener("click", function() {
 
     saleElement.innerHTML = 'Biglietto Standard';
 
+    if(userAge === 'Minorenne') {
+        saleElement.innerHTML = 'Biglietto Ridotto del 20%';
+    } else if(userAge === 'Over 65'){
+        saleElement.innerHTML = 'Biglietto Ridotto del 40%';
+    } else if(userAge === 'Maggiorenne') {
+        saleElement.innerHTML = 'Biglietto Standard';
+    }
+
     const costsElement = document.getElementById('costs');
     console.log(costsElement);
 
